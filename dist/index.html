@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Canvas Boilerplate | Chris Courses</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+      }
+      canvas{
+        margin: 0;
+      }
+      .scoreContainer{
+        display: flex;
+        position: fixed;
+        background-color: transparent;
+        color: white;
+        padding: 2rem 4rem;
+        width: 60px;
+        height: 60px;
+        justify-content: space-around;
+        user-select: none;
+      }
+
+      .start-btn-cont{
+        position: fixed;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 200px;
+        height: 100px;
+        align-items: center;
+        top: 45%;
+        left: 43%;
+        user-select: none;
+        
+      }
+    </style>
+  <link rel="icon" href="favicon.ico"><script defer src="./js/canvas.bundle.js"></script></head>
+  <body>
+    <div class="scoreContainer"> 
+      <span>Score: </span>
+      <span id="score"> 0</span>
+    </div>
+    <div id="model" class="start-btn-cont"> 
+      <span id="lastScore">0</span>
+      <button id="startButton"> Start Game</button>
+    </div>
+    <canvas></canvas>
+    
+  </body>
+</html>
